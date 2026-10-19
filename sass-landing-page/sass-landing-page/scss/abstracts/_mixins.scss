@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+@mixin container {
+  width: min(100% - 40px, $container-width);
+  margin-inline: auto;
+}
+
+@mixin button($background: $color-primary, $foreground: #fff) {
+  display: inline-block;
+  padding: 13px 22px;
+  border: 0;
+  border-radius: 9px;
+  background: $background;
+  color: $foreground;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .2s ease, transform .2s ease;
+
+  &:hover {
+    background: $color-primary-dark;
+    transform: translateY(-2px);
+  }
+}
+
+@mixin section-title {
+  margin: 0 0 14px;
+  color: $color-text;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}

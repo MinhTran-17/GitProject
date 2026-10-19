@@ -1,0 +1,41 @@
+@use "../abstracts/variables" as *;
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.product-card {
+  padding: 28px;
+  border: 1px solid $color-border;
+  border-radius: $radius-card;
+  background: #fff;
+  box-shadow: $shadow-card;
+  transition: transform .2s ease;
+
+  &:hover { transform: translateY(-5px); }
+
+  &__icon {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 22px;
+    border-radius: 15px;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    &--purple { color: $color-primary; background: $color-purple; }
+    &--blue { color: #2476d2; background: $color-blue; }
+    &--orange { color: #c7781d; background: $color-orange; }
+  }
+
+  h3 { margin: 0 0 10px; font-size: 1.2rem; }
+  p { margin: 0 0 20px; color: $color-muted; }
+  a { color: $color-primary; font-weight: 700; text-decoration: none; }
+}
+
+@media (max-width: $mobile) {
+  .product-grid { grid-template-columns: 1fr; }
+}
