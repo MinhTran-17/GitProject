@@ -44,7 +44,6 @@ body {
 .content { width: 60%; background: #bdc3c7; }
 .right   { width: 20%; background: #ecf0f1; }
 
-/* Máy tính bảng */
 @media (max-width: 768px) {
     .main {
         flex-wrap: wrap;
@@ -63,7 +62,6 @@ body {
     }
 }
 
-/* Điện thoại */
 @media (max-width: 480px) {
     .left,
     .right,
