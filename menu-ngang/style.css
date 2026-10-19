@@ -1,0 +1,59 @@
+/* Phông chữ cho trang */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Vùng chứa trình đơn */
+#menu {
+    height: 30px;
+    border: 1px solid #222;
+    padding: 0;
+    background-color: black;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Các mục của trình đơn cha xếp hàng ngang */
+#menu li {
+    float: left;
+    position: relative;
+}
+
+/* Liên kết trong trình đơn */
+#menu a {
+    display: block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+/* Đổi màu nền sang đỏ khi rê chuột */
+#menu a:hover {
+    background-color: red;
+}
+
+/* Trình đơn con: hiện ngay bên dưới mục cha và ẩn đi */
+#menu ul ul {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    visibility: hidden;
+}
+
+/* Mục của trình đơn con xếp dọc */
+#menu ul ul li {
+    float: none;
+}
+
+/* Hiện trình đơn con khi rê chuột vào mục cha */
+#menu li:hover > ul {
+    visibility: visible;
+}
