@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header,
+.menu,
+.footer {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.header { background: #2c3e50; height: 100px; }
+.menu   { background: #16a085; }
+.footer { background: #2c3e50; }
+
+.main {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.left,
+.right,
+.content {
+    padding: 20px;
+    min-height: 300px;
+    text-align: center;
+}
+
+.left    { width: 20%; background: #ecf0f1; }
+.content { width: 60%; background: #bdc3c7; }
+.right   { width: 20%; background: #ecf0f1; }
+
+/* Máy tính bảng */
+@media (max-width: 768px) {
+    .main {
+        flex-wrap: wrap;
+    }
+    .content {
+        width: 100%;
+        order: 1;
+    }
+    .left {
+        width: calc(50% - 5px);
+        order: 2;
+    }
+    .right {
+        width: calc(50% - 5px);
+        order: 3;
+    }
+}
+
+/* Điện thoại */
+@media (max-width: 480px) {
+    .left,
+    .right,
+    .content {
+        width: 100%;
+        min-height: 150px;
+    }
+}
