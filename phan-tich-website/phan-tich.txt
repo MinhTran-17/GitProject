@@ -1,0 +1,14 @@
+PHAN TICH CAU TRUC WEBSITE
+
+Website tham khao: https://www.wikipedia.org/
+
+1. Header: Nam o phia tren, hien thi nhan dien va noi dung chinh cua trang.
+2. Navigation Menu: Cung cap cac lien ket giup nguoi dung di chuyen giua cac muc.
+3. Content Section: Hien thi noi dung chinh, duoc sap xep de de doc va tim kiem.
+4. Footer: Nam o cuoi trang, chua thong tin ban quyen va cac lien ket bo sung.
+
+XAY DUNG WEBSITE TEMPLATE
+
+Trang web duoc chia thanh Header, Navigation Menu, Content Section va Footer.
+HTML dung de tao cau truc, CSS dung de dinh dang mau sac, khoang cach va bo cuc.
+Flexbox duoc su dung de sap xep menu va cac khu vuc noi dung.
