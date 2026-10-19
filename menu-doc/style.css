@@ -1,0 +1,45 @@
+/* Đồng nhất giữa các trình duyệt */
+body {
+    font-family: Arial, sans-serif;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mỗi mục trong menu */
+li {
+    list-style: none;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    padding: 0 20px;
+    background-color: black;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* Liên kết trong menu */
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Đổi màu nền khi rê chuột */
+li:hover {
+    background-color: #e67e22;
+}
+
+/* Menu con: đặt cạnh mục cha và ẩn đi */
+ul ul {
+    position: absolute;
+    top: 0;
+    left: 140px;
+    visibility: hidden;
+}
+
+/* Hiện menu con khi rê chuột vào mục cha */
+li:hover > ul {
+    visibility: visible;
+}
