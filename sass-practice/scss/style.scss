@@ -1,0 +1,50 @@
+$primary: #2563eb;
+$dark: #1e293b;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: $dark;
+}
+
+header {
+    background: $primary;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background: $dark;
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: #38bdf8;
+        }
+    }
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background: $dark;
+    color: white;
+    text-align: center;
+}
