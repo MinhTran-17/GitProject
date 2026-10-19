@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.help-text {
+  margin-top: 16px;
+  line-height: 1.5;
+}

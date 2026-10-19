@@ -1,0 +1,91 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.grid-container {
+  width: 100%;
+}
+
+.grid-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+
+  &--header { height: $header-height; }
+  &--body { height: $body-height; }
+  &--footer { height: $footer-height; }
+}
+
+.grid-content {
+  width: 8.3333%;
+  min-width: 0;
+  border-right: 1px solid $color-border;
+  background: $color-grid;
+
+  &--header {
+    @include full-width;
+    background: $color-header;
+    border-right-color: transparent;
+  }
+
+  &--footer {
+    @include full-width;
+    background: $color-footer;
+    border-right-color: transparent;
+  }
+
+  &--empty {
+    @include panel;
+    flex: 1;
+  }
+}
+
+.sidebar,
+.right-panel {
+  @include panel;
+  padding: 15px;
+}
+
+.sidebar {
+  width: 25%;
+  flex-shrink: 0;
+
+  &__item {
+    height: 15%;
+    margin-bottom: $spacing;
+    background: $color-panel;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.right-panel {
+  width: 25%;
+  flex-shrink: 0;
+
+  &__item {
+    height: 92%;
+    background: $color-panel;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .grid-wrapper--body {
+    height: auto;
+    min-height: 230px;
+    flex-wrap: wrap;
+  }
+
+  .sidebar,
+  .right-panel {
+    width: 100%;
+  }
+
+  .grid-content--empty {
+    display: none;
+  }
+
+  .right-panel {
+    height: 100px;
+  }
+}
