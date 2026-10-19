@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item {
+    width: 25%;
+    padding: 8px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* Nhỏ hơn 700px: 2 ảnh một dòng */
+@media (max-width: 699px) {
+    .item {
+        width: 50%;
+    }
+}
+
+/* Nhỏ hơn 500px: 1 ảnh một dòng */
+@media (max-width: 499px) {
+    .item {
+        width: 100%;
+    }
+}
