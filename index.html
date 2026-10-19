@@ -3,100 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tạo bố cục cơ bản</title>
+    <title>Landing Page Responsive</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="main">
+    <header class="header">
+        <div class="logo">MyBrand</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div id="head">
-            <div>
-                <h1>CODEGYM</h1>
-                <p>Học để làm được</p>
-            </div>
-            <div class="banner">
-                <h2>TRUNG TÂM ĐÀO TẠO LẬP TRÌNH</h2>
-                <p>Chinh phục công nghệ - Kiến tạo tương lai</p>
-            </div>
+    <section class="hero">
+        <h1>Chào mừng đến với MyBrand</h1>
+        <p>Giải pháp số 1 cho doanh nghiệp của bạn</p>
+        <a href="#services" class="btn">Tìm hiểu thêm</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Dịch vụ của chúng tôi</h2>
+        <div class="service-container">
+            <div class="service">Thiết kế web</div>
+            <div class="service">Phát triển phần mềm</div>
+            <div class="service">Marketing số</div>
         </div>
+    </section>
 
-        <div id="head-link">
-            <a href="#home">Home</a>
-            <a href="#students">Students</a>
-            <a href="#courses">Courses</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-        </div>
+    <section class="testimonials">
+        <h2>Khách hàng nói gì?</h2>
+        <div class="testimonial">"Dịch vụ tuyệt vời!" - Khách hàng A</div>
+        <div class="testimonial">"Tôi rất hài lòng với MyBrand." - Khách hàng B</div>
+    </section>
 
-        <div class="columns">
-            <div id="left">
-                <h3>Danh mục</h3>
-                <a href="#home">Trang chủ</a>
-                <a href="#students">Học viên</a>
-                <a href="#courses">Khóa học</a>
-                <a href="#events">Sự kiện</a>
-                <a href="#contact">Liên hệ</a>
-            </div>
-
-            <div id="content">
-                <div class="hot-news" id="home">
-                    <h2>TIN NỔI BẬT</h2>
-                    <p>Chào mừng bạn đến với trang web mô phỏng bố cục cơ bản bằng DIV và CSS.</p>
-                </div>
-
-                <div class="photo-slide">
-                    <div class="slide-art">HTML + CSS</div>
-                    <div>
-                        <h3>Học thiết kế website từ cơ bản</h3>
-                        <p>Luyện tập phân chia bố cục trang web bằng các vùng DIV.</p>
-                    </div>
-                </div>
-
-                <div class="news-grid" id="news">
-                    <div class="news-card">
-                        <h3>Tin tức 1</h3>
-                        <p>Tìm hiểu các thẻ HTML thường dùng khi xây dựng website.</p>
-                    </div>
-                    <div class="news-card">
-                        <h3>Tin tức 2</h3>
-                        <p>Sử dụng CSS để định dạng màu sắc và bố cục.</p>
-                    </div>
-                    <div class="news-card">
-                        <h3>Tin tức 3</h3>
-                        <p>Thực hành chia cột trái, nội dung chính và cột phải.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="right">
-                <div class="right-box">
-                    <h3>Lịch hoạt động</h3>
-                    <p>Thứ 2 - Học HTML</p>
-                    <p>Thứ 4 - Thực hành CSS</p>
-                    <p>Thứ 6 - Hoàn thiện giao diện</p>
-                </div>
-
-                <div class="right-box" id="courses">
-                    <h3>Khóa học</h3>
-                    <p>HTML cơ bản</p>
-                    <p>CSS căn bản</p>
-                    <p>Thiết kế giao diện web</p>
-                </div>
-
-                <div class="right-box" id="students">
-                    <h3>Học viên</h3>
-                    <p>Cùng học tập và chia sẻ kiến thức lập trình.</p>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
-
-        <div id="footer">
-            <p>© 2026 Bài thực hành HTML & CSS - Tạo bố cục cơ bản</p>
-            <p id="contact">Home | Students | Courses | Contact</p>
-        </div>
-
-    </div>
+    <footer class="footer">
+        <p>&copy; 2024 MyBrand. All rights reserved.</p>
+    </footer>
 </body>
 </html>
