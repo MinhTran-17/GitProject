@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Survey</title>
+    <style>
+        body { font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif; font-size: 13px; background: #e9eef3; margin: 0; padding: 30px 0; }
+        form { width: 640px; margin: 0 auto; background: #fff; border: 1px solid #c9d3dd; }
+        .header { padding: 18px 24px; border-bottom: 1px dotted #ccc; }
+        .header h2 { margin: 0 0 6px; color: #222; font-size: 20px; }
+        .header p { margin: 0; color: #555; }
+        .field { padding: 12px 24px; }
+        .field:hover { background: #fff7c0; }
+        .label { display: block; font-weight: bold; color: #222; margin-bottom: 6px; }
+        .req { color: #d00; }
+        .hint { font-size: 11px; color: #666; }
+        input[type="text"], input[type="email"], select, textarea { padding: 4px; border: 1px solid #aaa; font-family: inherit; font-size: 13px; }
+        .name input { width: 200px; margin-right: 10px; }
+        .name span { display: inline-block; }
+        .choice { display: block; margin: 3px 0; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { text-align: center; padding: 6px 4px; border-bottom: 1px solid #e3e3e3; }
+        th { font-size: 11px; font-weight: normal; color: #555; }
+        td.q { text-align: left; font-weight: bold; color: #333; }
+        tr:nth-child(even) td { background: #f6f8fa; }
+        .buttons { padding: 16px 24px 22px; }
+        .buttons input { padding: 6px 18px; font-family: inherit; font-size: 13px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="header">
+            <h2>Customer Satisfaction Survey</h2>
+            <p>Thank you for taking a moment to tell us about your experience. Your feedback helps us serve you better.</p>
+        </div>
+
+        <div class="field name">
+            <div class="label">Name <span class="req">*</span></div>
+            <span><input type="text" name="first_name" required><br><span class="hint">First</span></span>
+            <span><input type="text" name="last_name" required><br><span class="hint">Last</span></span>
+        </div>
+
+        <div class="field">
+            <label class="label" for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" size="40" required>
+        </div>
+
+        <div class="field">
+            <label class="label" for="source">How did you hear about us?</label>
+            <select id="source" name="source">
+                <option value="">-- Please select --</option>
+                <option value="search">Search engine</option>
+                <option value="social">Social media</option>
+                <option value="friend">Friend or colleague</option>
+                <option value="ads">Advertisement</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <span class="label">How satisfied are you with the following? <span class="req">*</span></span>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Very Unsatisfied</th>
+                    <th>Unsatisfied</th>
+                    <th>Neutral</th>
+                    <th>Satisfied</th>
+                    <th>Very Satisfied</th>
+                </tr>
+                <tr>
+                    <td class="q">Product quality</td>
+                    <td><input type="radio" name="quality" value="1" required></td>
+                    <td><input type="radio" name="quality" value="2"></td>
+                    <td><input type="radio" name="quality" value="3"></td>
+                    <td><input type="radio" name="quality" value="4"></td>
+                    <td><input type="radio" name="quality" value="5"></td>
+                </tr>
+                <tr>
+                    <td class="q">Customer service</td>
+                    <td><input type="radio" name="service" value="1" required></td>
+                    <td><input type="radio" name="service" value="2"></td>
+                    <td><input type="radio" name="service" value="3"></td>
+                    <td><input type="radio" name="service" value="4"></td>
+                    <td><input type="radio" name="service" value="5"></td>
+                </tr>
+                <tr>
+                    <td class="q">Price</td>
+                    <td><input type="radio" name="price" value="1" required></td>
+                    <td><input type="radio" name="price" value="2"></td>
+                    <td><input type="radio" name="price" value="3"></td>
+                    <td><input type="radio" name="price" value="4"></td>
+                    <td><input type="radio" name="price" value="5"></td>
+                </tr>
+                <tr>
+                    <td class="q">Delivery speed</td>
+                    <td><input type="radio" name="delivery" value="1" required></td>
+                    <td><input type="radio" name="delivery" value="2"></td>
+                    <td><input type="radio" name="delivery" value="3"></td>
+                    <td><input type="radio" name="delivery" value="4"></td>
+                    <td><input type="radio" name="delivery" value="5"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="field">
+            <span class="label">Which of our products have you used?</span>
+            <label class="choice"><input type="checkbox" name="products" value="software"> Software</label>
+            <label class="choice"><input type="checkbox" name="products" value="hardware"> Hardware</label>
+            <label class="choice"><input type="checkbox" name="products" value="support"> Support services</label>
+            <label class="choice"><input type="checkbox" name="products" value="training"> Training</label>
+        </div>
+
+        <div class="field">
+            <span class="label">Would you recommend us to a friend? <span class="req">*</span></span>
+            <label class="choice"><input type="radio" name="recommend" value="yes" required> Yes</label>
+            <label class="choice"><input type="radio" name="recommend" value="maybe"> Maybe</label>
+            <label class="choice"><input type="radio" name="recommend" value="no"> No</label>
+        </div>
+
+        <div class="field">
+            <label class="label" for="comments">Comments or suggestions</label>
+            <textarea id="comments" name="comments" rows="5" cols="70"></textarea>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
