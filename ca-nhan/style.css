@@ -1,0 +1,70 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+/* Tiêu đề: màu nền + ảnh nền dạng dải màu */
+header {
+    background-color: #4CAF50;
+    background-image: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* Ảnh đại diện */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+    margin: 20px;
+}
+
+/* Các phần nội dung */
+section h2 {
+    color: #2e7d32;
+}
+
+.goals {
+    border-top: 2px dashed #4CAF50;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Danh sách */
+ul {
+    list-style-type: square;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Bảng */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+td {
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ddd;
+}
