@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 40px;
+}
+
+h2 {
+    color: #1f5fa8;
+    font-size: 18px;
+    margin-top: 28px;
+}
+
+/* 1. Đường viền: bảng, ô tiêu đề, ô dữ liệu đều có viền -> viền kép */
+.t1, .t1 th, .t1 td {
+    border: 1px solid black;
+}
+
+/* 2. Gộp các đường viền liền kề thành một */
+.t2 {
+    border-collapse: collapse;
+}
+.t2, .t2 th, .t2 td {
+    border: 1px solid black;
+}
+
+/* 3. Chiều rộng 100%, chiều cao tiêu đề 50px */
+.t3 {
+    width: 100%;
+    border-collapse: collapse;
+}
+.t3, .t3 th, .t3 td {
+    border: 1px solid black;
+}
+.t3 th {
+    height: 50px;
+}
+
+/* 4. Căn tiêu đề sang trái */
+.t4 {
+    width: 60%;
+    border-collapse: collapse;
+}
+.t4, .t4 th, .t4 td {
+    border: 1px solid black;
+}
+.t4 th {
+    text-align: left;
+}
+
+/* 5. Căn nội dung ô xuống dưới */
+.t5 {
+    border-collapse: collapse;
+}
+.t5, .t5 th, .t5 td {
+    border: 1px solid black;
+}
+.t5 td {
+    height: 80px;
+    vertical-align: bottom;
+}
+
+/* 6. Khoảng cách giữa nội dung và viền ô */
+.t6 {
+    border-collapse: collapse;
+}
+.t6, .t6 th, .t6 td {
+    border: 1px solid black;
+}
+.t6 th, .t6 td {
+    padding: 15px;
+}
+
+/* 7. Màu nền và màu chữ */
+.t7, .t7 th, .t7 td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.t7 th, .t7 td {
+    padding: 10px;
+}
+.t7 th {
+    background-color: #333;
+    color: white;
+}
+.t7 td {
+    background-color: #f2f2f2;
+    color: #333;
+}
