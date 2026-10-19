@@ -1,0 +1,51 @@
+/* Element selector: chọn theo tên thẻ */
+body {
+    background-color: #eef5ff;
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+/* ID selector: chọn phần tử có id="title" */
+#title {
+    text-align: center;
+    color: #1f5fa8;
+}
+
+/* Class selector: chọn phần tử có class="intro" */
+.intro {
+    font-size: 17px;
+    color: #333;
+}
+
+/* Grouping selector: áp dụng chung cho nhiều thẻ */
+h2, .hobbies {
+    color: #444;
+}
+
+/* Pseudo-class :nth-child - mỗi mục một màu khác nhau */
+.hobbies li:nth-child(1) {
+    color: #e53935;
+}
+.hobbies li:nth-child(2) {
+    color: #43a047;
+}
+.hobbies li:nth-child(3) {
+    color: #fb8c00;
+}
+
+/* Nút bấm */
+.btn {
+    background-color: #1f5fa8;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Pseudo-class :hover - đổi màu khi rê chuột vào nút */
+.btn:hover {
+    background-color: #f0a020;
+    color: #222;
+}
