@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* Container dùng Flexbox, cho phép xuống dòng */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+header, nav, footer {
+  flex: 0 0 100%;
+  padding: 20px;
+  color: #fff;
+}
+
+header { background: #2c3e50; text-align: center; }
+nav    { background: #34495e; padding: 0; }
+footer { background: #2c3e50; text-align: center; }
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li { flex: 1; }
+
+nav a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover { background: #1abc9c; }
+
+main {
+  flex: 3;
+  background: #fff;
+  padding: 20px;
+  min-height: 250px;
+}
+
+aside {
+  flex: 1;
+  background: #ecf0f1;
+  padding: 20px;
+  min-height: 250px;
+}
+
+/* Mobile: xếp dọc */
+@media (max-width: 768px) {
+  .container { flex-direction: column; }
+
+  nav ul { flex-direction: column; }
+
+  main, aside {
+    flex: 0 0 100%;
+    min-height: auto;
+  }
+}
