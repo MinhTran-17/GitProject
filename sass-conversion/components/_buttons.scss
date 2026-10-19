@@ -1,0 +1,1 @@
+@use "../abstracts/variables" as *; @use "../abstracts/mixins" as *; .button { @include button-style($primary-color); &:hover { opacity: 0.8; } }

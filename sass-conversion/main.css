@@ -1,0 +1,19 @@
+/* Error: Undefined variable.
+ *   ,
+ * 9 |   box-shadow: $box-shadow;
+ *   |               ^^^^^^^^^^^
+ *   '
+ *   abstracts\_mixins.scss 9:15   box-shadow()
+ *   components\_cards.scss 1:126  @use
+ *   main.scss 6:1                 root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 9 \2502    box-shadow: $box-shadow;\a   \2502                ^^^^^^^^^^^\a   \2575 \a   abstracts\\_mixins.scss 9:15   box-shadow()\a   components\\_cards.scss 1:126  @use\a   main.scss 6:1                 root stylesheet";
+}
